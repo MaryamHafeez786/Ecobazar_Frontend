@@ -5,25 +5,52 @@ import plant from "../../assets/plant.svg";
 import heart from "../../assets/Heart.svg";
 import bagCart from "../../assets/bagCart.svg";
 import devider from "../../assets/Devider.svg";
-import { IoSearchOutline } from "react-icons/io5";
-import { CiMail, CiLock } from "react-icons/ci";
-const Navbar = () => {
+import { CiMail } from "react-icons/ci";
+import chevrondown from "../../assets/ChevronDown.svg";
+import phone from "../../assets/Phone.svg";
+import { Link } from "react-router-dom";
+const Navbar = ({
+  navLocation,
+  stylelocation,
+  stylenav,
+  locationimg,
+  naveng,
+  navusd,
+  imgdrop,
+  imgdown,
+  styleEng,
+  styleUsd,
+}) => {
   return (
     <>
-      <div className="h-42 bg-gray-800 flex justify-around ">
+      <div
+        className="h-42 bg-gray-800 flex justify-around"
+        style={stylelocation}
+      >
         <div className="flex gap-2">
-          <img src={location} alt="" />
-          <h5 className="text-gray-300">
-            Store Location: Lincoln- 344, Illinois, Chicago, USA
+          <img src={locationimg} alt="" />
+          <h5 className="text-gray-300" style={stylenav}>
+            {navLocation}
           </h5>
         </div>
         <div className="flex gap-3">
-          <h5 className="text-gray-300">Eng</h5>
-          <img src={vv} alt="" className="text-gray-300" />
-          <h5 className="text-gray-300">USD</h5>
-          <img src={vv} alt="" className="text-gray-300" />
+          <h5 className="text-gray-300" style={styleEng}>
+            {naveng}
+          </h5>
+          <img src={imgdrop} alt="" className="text-gray-300" />
+          <h5 className="text-gray-300" style={styleUsd}>
+            {navusd}
+          </h5>
+          <img src={imgdown} alt="" className="text-gray-300" />
           <h5 className="text-gray-300">|</h5>
-          <h5 className="text-gray-300">Sign In / Sign Up</h5>
+
+          <Link to="/">
+            <p className="text-gray-300">Sign In</p>
+          </Link>
+          <p className="text-gray-300">/</p>
+          <Link to="/signup">
+            <p className="text-gray-300">Sign Up </p>
+          </Link>
         </div>
       </div>
       <div className="flex justify-between">
@@ -48,7 +75,7 @@ const Navbar = () => {
                 }}
               />
               <div className="button">
-                <button className="p-3 pl-6 ">Search</button>
+                <button className="p-2 pl-5 ">Search</button>
               </div>
             </div>
           </form>
@@ -64,6 +91,35 @@ const Navbar = () => {
             <h6>$57.00</h6>
           </div>
         </div>
+      </div>
+      <hr />
+      <div>
+        <ul className="mt-6 flex flex-row gap-10 ml-48">
+          <ul className="flex gap-1">
+            <li>Home</li>
+            <img src={chevrondown} alt="" />
+          </ul>
+          <ul className="flex gap-1">
+            <li>Shop</li>
+            <img src={chevrondown} alt="" />
+          </ul>
+          <ul className="flex gap-1">
+            <li>Pages</li>
+            <img src={chevrondown} alt="" />
+          </ul>
+          <ul className="flex gap-1">
+            <li>Blog</li>
+            <img src={chevrondown} alt="" />
+          </ul>
+          <ul className="flex gap-10">
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+          <div className="flex gap-2 ml-96 ">
+            <img src={phone} alt="" />
+            <h6>(219) 555-0114 </h6>
+          </div>
+        </ul>
       </div>
     </>
   );

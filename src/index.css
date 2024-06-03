@@ -35,3 +35,49 @@ body {
   border: 2px solid;
   border-color: #00b207;
 }
+.email {
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: lightgrey;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: "100%";
+  align-items: center;
+  border-radius: 8px;
+}
+.password {
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: lightgrey;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: "100%";
+  align-items: center;
+  border-radius: 8px;
+}
+.password1 {
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: lightgrey;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: "100%";
+  align-items: center;
+  border-radius: 8px;
+}
+.form-common1 {
+  height: 48px;
+  background-color: #ffffff;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border: 2px solid;
+  border-color: lightgrey;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  border-right: none;
+}

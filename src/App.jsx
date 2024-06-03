@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignIn from "./Pages/Auth/SignIn";
 import SignUp from "./Pages/Auth/SignUp";
 import Navbar from "./components/Navbar/Navbar";
 import Lottie from "lottie-react";
 import LoaderMain from ".././src/assets/Loadermain.json";
 import Hero from "./components/Hero/Hero";
-
+import SignIn from "./Pages/Auth/SignIn";
+import Footer from "./components/Footer/Footer";
+import Home from "./Pages/Home/index.jsx";
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -27,13 +28,17 @@ const App = () => {
         </div>
       ) : (
         <BrowserRouter>
-          <Navbar />
+          {/* <Navbar
+            navLocation={"Store Location: Lincoln- 344, Illinois, Chicago, USA"}
+          />
+          <Hero /> */}
           <Routes>
             <Route path="/" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/home" element={<Home />} />
             <Route path="*" element={<Error />} />
           </Routes>
-          <Hero />
+          {/* <Footer /> */}
         </BrowserRouter>
       )}
     </>

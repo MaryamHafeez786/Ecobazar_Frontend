@@ -6,19 +6,21 @@ import vector from "../../assets/Vector.svg";
 const Hero = () => {
   const myStyle = {
     backgroundImage: `url(${Breadcrumbs})`,
-    width: "209px",
-    height: "402px",
+    width: "1920px",
+    height: "120px",
   };
 
   return (
     <>
-      <div className="">
-        <div className="flex gap-3 mb-5">
-          <img src={home} alt="" />
-          <img src={vector} alt="" />
-          <h5>Account</h5>
-          <img src={vector} alt="" />
-          <h5 className="text-green-500">Login</h5>
+      <div style={myStyle}>
+        <div className="flex gap-3 mt-5">
+          <div className="flex gap-3 ml-48 mt-10 ">
+            <img src={home} alt="" />
+            <img src={vector} alt="" />
+            <h5 className="text-gray-400">Account</h5>
+            <img src={vector} alt="" />
+            <h5 className="text-green-500">Login</h5>
+          </div>
         </div>
       </div>
     </>

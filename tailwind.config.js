@@ -15,7 +15,7 @@ module.exports = {
       white: "#ffffff",
       purple: "#3f3cbb",
       midnight: "#252B42",
-      green: "#00B207",
+      darkgreen: "#00B207",
       grey: "#333333",
       dangerred: "#E21B1B",
       orange: "#FFAB71",
@@ -24,6 +24,8 @@ module.exports = {
       pink: "#FFF2F3",
       lightgrey: "#E6E6E6",
       lightgreyw: "#FAFAFA",
+      grayl: "#F7F7F7",
+      greengrey: "#DAE5DA",
     },
     fontSize: {
       xs: "0.75rem", // 12px
