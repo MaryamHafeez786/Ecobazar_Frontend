@@ -1,6 +1,4 @@
 import React from "react";
-import location from "../../assets/location.svg";
-import vv from "../../assets/vv.svg";
 import plant from "../../assets/plant.svg";
 import heart from "../../assets/Heart.svg";
 import bagCart from "../../assets/bagCart.svg";
@@ -82,9 +80,9 @@ const Navbar = ({
         </div>
         <div className="flex mr-52">
           <div className="flex gap-2">
-            <img src={heart} alt="" />
-            <img src={devider} alt="" />
-            <img src={bagCart} alt="" />
+            <img src={heart} alt="" width={32} height={33} />
+            <img src={devider} alt="" width={1} height={25} />
+            <img src={bagCart} alt="" width={32} height={33} />
           </div>
           <div className="flex flex-col mt-10 ml-3">
             <h6>Shopping cart:</h6>
