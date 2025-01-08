@@ -8,6 +8,7 @@ import Hero from "./components/Hero/Hero";
 import SignIn from "./Pages/Auth/SignIn";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/index.jsx";
+import Product from "./Pages/Product/index";
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -36,7 +37,7 @@ const App = () => {
             <Route path="/" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/home" element={<Home />} />
-            <Route path="*" element={<Error />} />
+            {/* <Route path="*" element={<Error />} /> */}
           </Routes>
           {/* <Footer /> */}
         </BrowserRouter>

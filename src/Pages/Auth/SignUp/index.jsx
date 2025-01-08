@@ -16,6 +16,8 @@ const SignUp = () => {
     <>
       <Navbar
         navLocation={"Store Location: Lincoln- 344, Illinois, Chicago, USA"}
+        naveng={"Eng"}
+        navusd={"Usd"}
       />
       <Hero />
       <section class=" dark:bg-gray-900 ">
